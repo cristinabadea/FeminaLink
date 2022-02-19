@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="secondPage-header.css" />
     <link rel="stylesheet" href="secondPage-main.css" />
     <link rel="stylesheet" href="secondPage-footer.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
     <title>Femina Link Second Page</title>
   </head>
   <body>
@@ -18,15 +26,49 @@
     <!-- Here ends HEADER -->
 
     <!-- Here starts MAIN -->
-    <main>
-      <section></section>
-      <section></section>
-      <section></section>
+
+    <!-- Sticky button -->
+    <button class="sticky-btn">
+      <a href="../HomePage/index.html">
+        Ready to get your <strong>quote</strong>?
+      </a>
+    </button>
+
+    <main class="main-container">
+      <div class="main">
+        <p class="main-first-p">Contact Us</p>
+        <div>
+          <hr />
+        </div>
+        <p class="main-second-p">
+          ‘ Working with Femina link was so easy and smooth.<br />
+          My business Mickies Poodle Parlour had just turned 3 so I wanted to
+          refresh our brand to appeal<br />
+          to the new generation of lockdown doggy owners and it was important to
+          me that every person on <br />the <br />project was a dog lover so
+          they could understand from a customer perspective the message I<br />
+          wanted to get across.<br /><br />
+          I couldn’t be happier with the results and I now have full trust in my
+          new development team!’
+        </p>
+
+        <input class="main-input1" type="text" />
+        <input class="main-input2" type="text" />
+
+        <div class="main-btn">
+          <button onclick="thankYou()">SEND INQUIRY</button>
+          <button onclick="info()">SCHEDULE A CALL</button>
+        </div>
+      </div>
     </main>
+
     <!-- Here ends MAIN -->
 
     <!-- Here starts FOOTER -->
     <footer></footer>
     <!-- Here ends FOOTER -->
+
+    <!-- Scripts -->
+    <script src="./secondPage.js"></script>
   </body>
 </html>
