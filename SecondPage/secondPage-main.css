@@ -39,7 +39,7 @@
   color: white;
   margin: 0 auto;
   margin-top: 5rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Serif 4", sans-serif;
 }
 
 .main-first-p {
@@ -60,6 +60,7 @@ hr {
   font-weight: 300;
   margin-right: 3rem;
   margin-left: 3rem;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .main-input1 {

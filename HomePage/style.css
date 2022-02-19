@@ -1,7 +1,8 @@
 /** @format */
 
-#main {
+.header-whole {
   background-image: url(../Images/banner1t.jpg);
+  opacity: 0.9;
   width: 100%;
   max-height: 10%;
   background-position: center;
@@ -9,14 +10,10 @@
   background-repeat: no-repeat;
   position: relative;
 }
-#overlay {
-  background: #00ff85;
-  opacity: 0.6;
-}
 
 h1 {
   font-family: "Source Serif 4", sans-serif;
-  color: black;
+  color: white;
   padding-left: 2rem;
   padding-top: 2rem;
 }
@@ -26,7 +23,7 @@ p {
   font-family: "Source Sans Pro", sans-serif;
   font-size: small;
   margin-right: 15rem;
-  color: black;
+  color: white;
 }
 
 /* MAIN Section 1 */
@@ -68,7 +65,7 @@ p {
 }
 .item-title {
   color: white;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Source Serif 4", sans-serif;
   font-size: 1rem;
   text-align: center;
 }
