@@ -127,7 +127,7 @@ p {
   margin: auto;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.548)),
-    url(images/inquiry.jpg);
+    url(../Images/inquiry.jpg);
   background-position: center;
   background-size: cover;
   text-align: left;
@@ -174,7 +174,7 @@ p {
 }
 
 .footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
