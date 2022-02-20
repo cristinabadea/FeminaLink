@@ -1,4 +1,10 @@
 /** @format */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
 
 #main {
   background-image: url(../Images/banner1t.jpg);
@@ -165,6 +171,7 @@ p {
   border: 1px solid #fff;
   background: #86333385;
   transition: 1s;
+  color: #fff;
 }
 /* Here ends Let's talk about your website project */
 
