@@ -1,10 +1,16 @@
 /** @format */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
 
 .header-whole {
   background-image: url(../Images/banner1t.jpg);
   opacity: 0.9;
   width: 100%;
-  max-height: 10%;
+
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,6 +32,50 @@ p {
   color: white;
 }
 
+.navbar {
+  float: right;
+  font-size: small;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-right: 1rem;
+}
+.navbarlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbarlist li {
+  float: left;
+}
+
+.navbarlist li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2px 2px;
+  text-decoration: none;
+}
+
+.navbarlist li a:hover:not(.active) {
+  background-color: #111;
+}
+.navbarlist li a.active {
+  background-color: #4caf50;
+}
+.navbarlist li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarlist li.right,
+  .navbarlist li {
+    float: none;
+  }
+}
+
 /* MAIN Section 1 */
 
 .section1 {
@@ -37,8 +87,8 @@ p {
 }
 
 .section1-item {
-  width: 200px;
-  height: 240px;
+  width: 300px;
+  height: 350px;
   border: 2px solid transparent;
   color: white;
   overflow-y: scroll;
@@ -56,7 +106,7 @@ p {
 .item-first-p {
   color: white;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -65,8 +115,8 @@ p {
 }
 .item-title {
   color: white;
-  font-family: "Source Serif 4", sans-serif;
-  font-size: 1rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.8rem;
   text-align: center;
 }
 .section1-item hr {
@@ -88,7 +138,7 @@ p {
   margin-block-end: 0;
   margin-right: 0;
   padding-top: 1.5rem;
-  font-size: 0.6rem;
+  font-size: 1.2rem;
   font-family: "Source Sans Pro", sans-serif;
   text-align: center;
   padding-right: 3rem;
@@ -102,11 +152,11 @@ p {
   float: right;
   top: 0;
   background-color: rgba(134, 51, 51, 0.77);
-  width: 3rem;
-  height: 5rem;
-  font-size: 0.5rem;
-  border-top-left-radius: 12rem;
-  border-bottom-left-radius: 12rem;
+  width: 5rem;
+  height: 8rem;
+  font-size: 1rem;
+  border-top-left-radius: 15rem;
+  border-bottom-left-radius: 15rem;
   margin-top: 8.5rem;
   border: none;
 }
@@ -117,4 +167,160 @@ p {
 .sticky-btn a:hover {
   text-decoration: none;
   color: white;
+}
+
+/* Here starts Let's talk about your website project */
+.inquiry {
+  margin: auto;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.548)),
+    url(../Images/inquiry.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: left;
+  padding: 8rem 0rem 8rem 12rem;
+}
+.inquiry h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+.inquiry h2 {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  color: #fff;
+}
+.hero-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  position: relative;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
+  background-color: #863333;
+}
+.inquiry-btn {
+  margin-right: 2rem;
+}
+.hero-btn:hover {
+  border: 1px solid #fff;
+  background: #86333385;
+  transition: 1s;
+  color: #fff;
+}
+/* Here ends Let's talk about your website project */
+
+/* Here starts footer*/
+.footer-container {
+  background-color: #ca9999;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ca9999;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6rem;
+}
+
+.footer-heading h2 {
+  margin-bottom: 2rem;
+}
+
+.footer-heading a {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
+.footer-heading a:hover {
+  color: #863333;
+  transition: 0.3s ease-out;
+}
+
+.footer-email-form h2 {
+  margin-bottom: 2rem;
+}
+#footer-email {
+  width: 250px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding-left: 0.5rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+#footer-email::placeholder {
+  color: #b1b1b1;
+}
+
+#footer-email-btn {
+  width: 100px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background-color: #863333;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#footer-email-btn:hover {
+  cursor: pointer;
+  background-color: #8633339f;
+  transition: all 0.4s ease-out;
+}
+.icons .fa {
+  color: #ffff;
+  margin: 0 10px;
+  cursor: pointer;
+  padding: 0;
+}
+.fa.fa-facebook {
+  margin-left: 0;
+}
+.icons .fa:hover {
+  cursor: pointer;
+  color: #863333;
+  transition: all 0.4s ease-out;
+}
+
+@media screen and (max-width: 1150px) {
+  .footer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    padding-top: 2rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .footer-email-form {
+    margin-top: 2rem;
+  }
 }
