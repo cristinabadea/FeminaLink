@@ -159,6 +159,7 @@ p {
   border-bottom-left-radius: 15rem;
   margin-top: 8.5rem;
   border: none;
+  transition: 1s;
 }
 .sticky-btn a {
   text-decoration: none;
@@ -168,7 +169,47 @@ p {
   text-decoration: none;
   color: white;
 }
+.sticky-btn:hover {
+  transform: scale(1.1);
+}
+/* Responsive */
 
+@media screen and (max-width: 1050px) {
+  .section1-item {
+    max-width: 15rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section1-item {
+    margin-top: 1rem;
+    max-width: 25rem;
+  }
+  .sticky-btn {
+    width: 4rem;
+    height: 6rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sticky-btn {
+    width: 3rem;
+    height: 5rem;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .sticky-btn {
+    width: 2rem;
+    height: 3.5rem;
+    font-size: 0.4rem;
+  }
+}
 /* Here starts Let's talk about your website project */
 .inquiry {
   margin: auto;

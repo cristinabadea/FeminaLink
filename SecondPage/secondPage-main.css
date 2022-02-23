@@ -96,6 +96,7 @@
   border-bottom-left-radius: 15rem;
   margin-top: 8.5rem;
   border: none;
+  transition: 1s;
 }
 .sticky-btn a {
   text-decoration: none;
@@ -104,6 +105,9 @@
 .sticky-btn a:hover {
   text-decoration: none;
   color: white;
+}
+.sticky-btn:hover {
+  transform: scale(1.1);
 }
 
 /* MAIN */
@@ -121,6 +125,10 @@
   max-width: 80%;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  -webkit-box-shadow: 0px 1px 38px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 1px 38px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 38px -6px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 /* First column */
 .main-item-1 {
@@ -133,18 +141,26 @@
 .logo {
   max-width: 10rem;
   max-height: 8rem;
+  transition: 1s;
   border-radius: 15rem;
-  border: 3px solid #00ff85;
+  border: 3px solid rgba(255, 38, 0, 0.097);
   margin-bottom: 1rem;
   -webkit-box-shadow: 0px 0px 47px 4px rgba(0, 0, 0, 0.52);
   -moz-box-shadow: 0px 0px 47px 4px rgba(0, 0, 0, 0.52);
   box-shadow: 0px 0px 47px 4px rgba(0, 0, 0, 0.52);
 }
-
+.logo:hover {
+  transform: scale(1.1);
+}
 .col1-h1 {
   font-family: "Source Serif 4", sans-serif;
   color: white;
+  transition: color 1s;
 }
+.col1-h1:hover {
+  color: #bb8989;
+}
+
 .col1-p {
   font-family: "Source Sans Pro", sans-serif;
   margin-top: 1rem;
@@ -161,8 +177,11 @@
   color: white;
   margin-left: 2rem;
   margin-bottom: 2rem;
+  transition: color 1s;
 }
-
+.col2-h1:hover {
+  color: rgba(58, 36, 36, 0.82);
+}
 .col-input {
   width: 80%;
   border: none;
@@ -172,6 +191,10 @@
   margin-left: 2rem;
   color: white;
 }
+.col-input:focus {
+  background-color: rgba(255, 38, 0, 0.097);
+  outline: none;
+}
 .col-input::placeholder {
   color: rgba(58, 36, 36, 0.82);
 }
@@ -179,6 +202,59 @@
   position: relative;
   right: 1.5rem;
   color: rgba(58, 36, 36, 0.82);
+  transition: color 1s;
+}
+.div-input i:hover {
+  color: white;
+}
+
+/* Responsive */
+@media screen and (max-width: 950px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+  }
+  .container-fluid {
+    background: linear-gradient(
+      to bottom,
+      rgba(58, 36, 36, 0.82) 50%,
+      rgba(152, 78, 78, 0.67) 50%
+    );
+    padding-bottom: 2rem;
+  }
+  .col1-h1 {
+    float: right;
+    margin-top: 2rem;
+  }
+  .main-item-2 {
+    margin-left: 1rem;
+  }
+  .sticky-btn {
+    width: 4rem;
+    height: 6rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .col1-h1 {
+    display: none;
+  }
+  .sticky-btn {
+    width: 3rem;
+    height: 5rem;
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .div-input i {
+    display: none;
+  }
+  .sticky-btn {
+    width: 2rem;
+    height: 3.5rem;
+    font-size: 0.4rem;
+  }
 }
 
 /* Here starts footer*/
