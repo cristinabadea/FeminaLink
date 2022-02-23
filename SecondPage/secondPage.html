@@ -7,10 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="secondPage-header.css" />
     <link rel="stylesheet" href="secondPage-main.css" />
-    <link rel="stylesheet" href="secondPage-footer.css" />
+  
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5da646489a.js"
+      crossorigin="anonymous"
+    ></script>
 
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,6 +40,7 @@
     <title>Femina Link Second Page</title>
   </head>
   <body>
+
     <!-- Here starts HEADER -->
     <header>
       <section id="main">
@@ -41,7 +53,6 @@
     <!-- Here ends HEADER -->
 
     <!-- Here starts MAIN -->
-
     <!-- Sticky button -->
     <button class="sticky-btn">
       <a href="../HomePage/index.html">
@@ -49,34 +60,41 @@
       </a>
     </button>
 
-    <main class="main-container">
-      <div class="main">
-        <p class="main-first-p">Contact Us</p>
-        <div>
-          <hr />
-        </div>
-        <p class="main-second-p">
-          ‘ Working with Femina link was so easy and smooth.<br />
-          My business Mickies Poodle Parlour had just turned 3 so I wanted to
-          refresh our brand to appeal<br />
-          to the new generation of lockdown doggy owners and it was important to
-          me that every person on <br />the <br />project was a dog lover so
-          they could understand from a customer perspective the message I<br />
-          wanted to get across.<br /><br />
-          I couldn’t be happier with the results and I now have full trust in my
-          new development team!’
+    <!-- Main container -->
+    <div class="container-fluid">
+      <div class="row align-items-start"">
+        <!-- First column -->
+      <div class="col main-item-1">
+        <!-- Logo -->
+        <img class="logo" src="../Images/FeminaLogo.png" alt="ourLogo" />
+        <!-- Title -->
+        <h1 class="col1-h1">Femina Link</h1>
+        <!-- Text -->
+        <p class="col1-p">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis culpa
+          voluptatum sequi voluptas odit aspernatur explicabo vero facilis <br>
+          excepturi beatae, perspiciatis ullam exercitationem deserunt.<br> Voluptas
+          saepe vel beatae illum doloribus.
         </p>
-
-        <input class="main-input1" type="text" />
-        <input class="main-input2" type="text" />
-
-        <div class="main-btn">
-          <button onclick="thankYou()">SEND INQUIRY</button>
-          <button onclick="info()">SCHEDULE A CALL</button>
+      </div>
+      <!-- Second column -->
+      <div class="col main-item-2">
+        <h1 class="col2-h1">GET IN TOUCH</h1>
+        <div class="input-name">
+          <input class="col-input" type="text" placeholder="Your name ..." />
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <div class="input-mail">
+          <input  class="col-input" type="text" placeholder="Your email ..." />
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+        <div class="input-message">
+          <input  class="col-input" type="text" placeholder="Your message ..." />
+          <i class="fa-solid fa-comment"></i>
         </div>
       </div>
-    </main>
-
+    </div>
+    </div>
     <!-- Here ends MAIN -->
 
     <!-- Here starts FOOTER -->
@@ -115,7 +133,21 @@
     </footer>
     <!-- Here ends FOOTER -->
 
-    <!-- Scripts -->
-    <script src="./secondPage.js"></script>
+    <!-- Bootstrap script -->
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"
+  ></script>
   </body>
 </html>
