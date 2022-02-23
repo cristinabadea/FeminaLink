@@ -6,8 +6,9 @@
   font-family: "Outfit", sans-serif;
 }
 
-#main {
+.header-whole {
   background-image: url(../Images/banner1t.jpg);
+  opacity: 0.9;
   width: 100%;
 
   background-position: center;
@@ -15,14 +16,10 @@
   background-repeat: no-repeat;
   position: relative;
 }
-#overlay {
-  background: #00ff85;
-  opacity: 0.6;
-}
 
 h1 {
   font-family: "Source Serif 4", sans-serif;
-  color: black;
+  color: white;
   padding-left: 2rem;
   padding-top: 2rem;
 }
@@ -32,7 +29,51 @@ p {
   font-family: "Source Sans Pro", sans-serif;
   font-size: small;
   margin-right: 15rem;
-  color: black;
+  color: white;
+}
+
+.navbar {
+  float: right;
+  font-size: small;
+  color: white;
+  font-family: "Source Sans Pro", sans-serif;
+  margin-right: 1rem;
+}
+.navbarlist {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbarlist li {
+  float: left;
+}
+
+.navbarlist li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2px 2px;
+  text-decoration: none;
+}
+
+.navbarlist li a:hover:not(.active) {
+  background-color: #111;
+}
+.navbarlist li a.active {
+  background-color: #4caf50;
+}
+.navbarlist li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  .navbarlist li.right,
+  .navbarlist li {
+    float: none;
+  }
 }
 
 /* MAIN Section 1 */
