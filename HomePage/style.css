@@ -10,31 +10,41 @@
   background-image: url(../Images/banner1t.jpg);
   opacity: 0.9;
   width: 100%;
+  height: 400px;
 
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
+  margin-bottom: 2rem;
 }
 
-h1 {
+.header-whole h1 {
   font-family: "Source Serif 4", sans-serif;
   color: white;
   padding-left: 2rem;
   padding-top: 2rem;
+  font-size: 3rem;
 }
-p {
+
+.header-wording:hover {
+  cursor: pointer;
+  color: #333;
+  transition: all 0.4s ease-out;
+}
+
+.header-whole p {
   padding-left: 2rem;
   padding-bottom: 3rem;
   font-family: "Source Sans Pro", sans-serif;
-  font-size: small;
+  font-size: 1.8rem;
   margin-right: 15rem;
   color: white;
 }
 
 .navbar {
   float: right;
-  font-size: small;
+  font-size: 1.5rem;
   color: white;
   font-family: "Source Sans Pro", sans-serif;
   margin-right: 1rem;
@@ -55,7 +65,7 @@ p {
   display: block;
   color: white;
   text-align: center;
-  padding: 2px 2px;
+  padding: 4px 4px;
   text-decoration: none;
 }
 
