@@ -4,6 +4,9 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 /* Here starts a sticky button */
 .sticky-btn {
   color: white;
@@ -37,13 +40,14 @@
 
 /* Here starts the header with a navbar */
 
-.header-wording {
+.header-wording a {
+  text-decoration: none;
   font-family: "Roboto Slab", serif;
   font-size: 2rem;
   color: #fff;
   margin-left: 2rem;
 }
-.header-wording:hover {
+.header-wording a:hover {
   cursor: pointer;
   color: #333;
   transition: all 0.4s ease-out;
