@@ -38,7 +38,7 @@ header {
   height: 28rem;
   margin: auto;
   max-width: 100%;
-  background-image: url(images/bannerSub2.jpg);
+  background-image: url(../Images/bannerSub2.jpg);
   background-position: center;
   background-size: cover;
   text-align: left;
@@ -86,7 +86,7 @@ nav {
 .nav-links ul li:hover::after {
   width: 100%;
 }
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .text-box h1 {
     font-size: 20px;
   }
@@ -114,7 +114,7 @@ nav {
   .nav-links ul {
     padding: 30px;
   }
-}
+} */
 /* .header-p {
     font-family: "Roboto Slab", serif;
     font-size: 1rem;
@@ -241,7 +241,7 @@ testimonial-col p {
   margin: auto;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.219), rgba(0, 0, 0, 0.548)),
-    url(images/inquiry.jpg);
+    url(../Images/inquiry.jpg);
   background-position: center;
   background-size: cover;
   text-align: left;
