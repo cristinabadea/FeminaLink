@@ -6,7 +6,6 @@
 }
 /* Here starts a sticky button */
 .sticky-btn {
-  /* display: block; */
   color: white;
   position: sticky;
   float: right;
@@ -17,7 +16,7 @@
   font-size: 1rem;
   border-top-left-radius: 12rem;
   border-bottom-left-radius: 12rem;
-  margin-top: 15rem;
+  margin-top: 7rem;
   border: none;
   cursor: pointer;
 }
@@ -31,9 +30,24 @@
   transition: 1s;
   color: #fff;
 }
+.sticky-btn:hover {
+  transform: scale(1.1);
+}
 /* Here ends a sticky button */
 
 /* Here starts the header with a navbar */
+
+.header-wording {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  color: #fff;
+  margin-left: 2rem;
+}
+.header-wording:hover {
+  cursor: pointer;
+  color: #333;
+  transition: all 0.4s ease-out;
+}
 header {
   height: 28rem;
   margin: auto;
@@ -42,7 +56,6 @@ header {
   background-position: center;
   background-size: cover;
   text-align: left;
-  /* padding: 2rem 0 0 2rem; */
 }
 .header-h {
   font-family: "Roboto Slab", serif;
@@ -56,9 +69,7 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-/* nav img {
-    height: 75px; 
-  }*/
+
 .nav-links {
   flex: 1;
   text-align: right;
@@ -72,7 +83,7 @@ nav {
 .nav-links ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .nav-links ul li::after {
   content: "";
