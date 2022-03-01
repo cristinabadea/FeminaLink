@@ -42,7 +42,9 @@
   <body>
 
 <!-- Here starts HEADER -->
+
 <header>
+  
   <section class="header-whole">
     <nav class="navbar">
       <ul class="navbarlist">
@@ -61,6 +63,7 @@
 <!-- Here ends HEADER -->
 
     <!-- Here starts MAIN -->
+    
     <!-- Sticky button -->
     <button class="sticky-btn">
       <a href="../HomePage/index.html">
@@ -100,9 +103,18 @@
           <input  class="col-input textarea" placeholder="Your message ..." />
           <i class="fa-solid fa-comment"></i>
         </div>
+
+        <button class="submit-btn" onclick="Submit()">Submit</button>
+        <div id="modal">
+          <div class="modal-container">
+            <h5> Thank you for submitting your message! 👍 </h5>
+            <button class="close-btn" onclick="Close()"> Close </button>
+          </div>
+        </div>
       </div>
     </div>
-    </div>
+    
+  </div>
     <!-- Here ends MAIN -->
 
     <!-- Here starts FOOTER -->
@@ -140,7 +152,8 @@
       </section>
     </footer>
     <!-- Here ends FOOTER -->
-
+    <!-- Scripts -->
+    <script src=".//secondPage.js"></script>
     <!-- Bootstrap script -->
     <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
