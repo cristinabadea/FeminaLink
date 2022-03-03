@@ -560,7 +560,7 @@ nav {
   background-color: #8633339f;
   transition: all 0.4s ease-out;
 }
-.icons .fa {
+.footer-email-form .icons .fa {
   color: #ffff;
   margin-left: 1rem;
   cursor: pointer;
@@ -569,7 +569,7 @@ nav {
 .fa.fa-facebook {
   margin-left: 0rem;
 }
-.icons .fa:hover {
+.footer-email-form .icons .fa:hover {
   cursor: pointer;
   color: #863333;
   transition: all 0.4s ease-out;
